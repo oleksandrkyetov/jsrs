@@ -1,20 +1,20 @@
-# JSR 305: Annotations for Software Defect Detection
+## JSR 305: Annotations for Software Defect Detection
 
-## Notes
+### Notes
 
-### General
+##### General
 At the moment, [JSR-305](https://jcp.org/en/jsr/detail?id=305) is in Dormant status, so it is not advised to use it
 
-### Description
+##### Description
 Below you can see useful application of `@Nonnull` and `@Nullable` annotations and hints provided by [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 
-### Prerequisites
+##### Prerequisites
 1. [Maven](https://maven.apache.org/)
 2. [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 
-## Use cases
+### Use cases
 
-### Non-null object hints
+##### Non-null object hints
 We have a class with two methods, `setObject` which does not allow null objects and `getObject` which does not provide a null object
 ```
 public class NonnullObjectHolder implements ObjectHolder {

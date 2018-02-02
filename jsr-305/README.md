@@ -3,7 +3,7 @@
 ### Notes
 
 ##### General
-At the moment, [JSR-305](https://jcp.org/en/jsr/detail?id=305) is in **Dormant** state, so it is advised for usage at the moment
+At the moment, [JSR-305](https://jcp.org/en/jsr/detail?id=305) is in **Dormant** state, so it is advised for usage
 
 ##### Description
 Below you can see when and why to use `@Nonnull` and `@Nullable` annotations. Also, hints provided by [IntelliJ IDEA](https://www.jetbrains.com/idea/) for these annotations are described

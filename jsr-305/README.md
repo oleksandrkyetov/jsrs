@@ -100,4 +100,5 @@ Case when we are calling a method on a reference which is marked `@Nullable` (po
 
 ##### Conclusion
 There is much more in JSR-305, but unfortunately, other annotations are not supported by [IntelliJ IDEA](https://www.jetbrains.com/idea/) out of the box. Moreover, as it mentioned above, JSR status is **Dormant**, thus it is not recommended for usage at the moment
+
 From what is observed, it would have been a useful addition for tools and developers and would have helped to prevent mistakes and errors on the early stage of development

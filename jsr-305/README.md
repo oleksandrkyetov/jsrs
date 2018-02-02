@@ -50,7 +50,6 @@ public class Main {
     }
 
 }
-
 ```
 The real value comes from [IntelliJ IDEA](https://www.jetbrains.com/idea/) hints
 

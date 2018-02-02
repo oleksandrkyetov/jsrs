@@ -3,7 +3,7 @@
 ### Notes
 
 ##### General
-At the moment, [JSR-305](https://jcp.org/en/jsr/detail?id=305) is in Dormant status, so it is not advised to use it
+At the moment, [JSR-305](https://jcp.org/en/jsr/detail?id=305) is in **Dormant** status, so it is not advised for usage
 
 ##### Description
 Below you can see useful application of `@Nonnull` and `@Nullable` annotations and hints provided by [IntelliJ IDEA](https://www.jetbrains.com/idea/)
@@ -97,3 +97,6 @@ public class Main {
 Case when we try to call a method on a reference which is marked `@Nullable` (potentially `null` reference)
 
 ![jsr-305-nullable-check-1.png](screenshots/jsr-305-nullable-check-1.png)
+
+##### Conclusion
+There is much more in JSR-305, but unfortunately, other annotations are not supported by [IntelliJ IDEA](https://www.jetbrains.com/idea/) out of the box. Moreover, as it mentioned above, JSR status is **Dormant**, thus it is not recommended to use. In general, from what is observed, it would have been a useful addition for the developers and tools to prevent mistakes and errors on early stage of deevlopment

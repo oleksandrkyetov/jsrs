@@ -21,7 +21,7 @@ public class NonnullObjectHolder implements ObjectHolder {
 
     private Object object;
 
-    public void setObject(@Nonnull Object object) {
+    public void setObject(final @Nonnull Object object) {
         this.object = object;
     }
 
@@ -66,7 +66,7 @@ public class NullableObjectHolder implements ObjectHolder {
 
     private Object object;
 
-    public void setObject(@Nullable Object object) {
+    public void setObject(final @Nullable Object object) {
         this.object = object;
     }
 

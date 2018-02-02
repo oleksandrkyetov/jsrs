@@ -31,19 +31,31 @@ public class NonnullObjectHolder implements ObjectHolder {
 
 }
 ```
-Marking method parameters and/or return type with `@Nonnull` annotation does not prevent developers from passing `null` objects or calling methods on objects which might be `null`, but [IntelliJ IDEA](https://www.jetbrains.com/idea/) highlights such cases and signals developers that something is potentially wrong. Here is an example of such behavior
+Marking method parameters and/or return type with `@Nonnull` annotation does not prevent developers from passing `null` objects or calling methods on objects which might be `null`, but [IntelliJ IDEA](https://www.jetbrains.com/idea/) highlights such cases and signals developers that something is potentially wrong. For example, code below compiles successfully
 ```
-public static void main(final String[] arguments) {
+public class Main {
+
+    public static void main(final String[] arguments) {
     // Object holder which does not allow null objects
-    final NonnullObjectHolder nonnullObjectHolder = new NonnullObjectHolder();
-
-    // Attempt to set null object into the method which is marked with Nonnull annotation
-    nonnullObjectHolder.setObject(null);
-
-    // Attempt to perform a null check on the object returned from the method, which is marked with Nonnull annotation
-    if (nonnullObjectHolder.getObject() != null) {
-        // ...
+        final NonnullObjectHolder nonnullObjectHolder = new NonnullObjectHolder();
+    
+        // Attempt to set null object into the method which is marked with Nonnull annotation
+        nonnullObjectHolder.setObject(null);
+    
+        // Attempt to perform a null check on the object returned from the method, which is marked with Nonnull annotation
+        if (nonnullObjectHolder.getObject() != null) {
+            // ...
+        }
+        
     }
+
 }
 
 ```
+The real value comes from [IntelliJ IDEA](https://www.jetbrains.com/idea/) hints
+
+Case when we try to pass `null` as an argument to the of the method which is marked `@Nonnull`
+![](./screenshots/jsr-305-nonnull-check-1.png
+
+Case when we try to perform `null` check on the object returned by method which return type is marked `@Nonnull`
+![](./screenshots/jsr-305-nonnull-check-2.png

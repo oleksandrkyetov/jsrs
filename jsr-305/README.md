@@ -36,7 +36,7 @@ Marking method parameters and/or return type with `@Nonnull` annotation does not
 public class Main {
 
     public static void main(final String[] arguments) {
-    // Object holder which does not allow null objects
+        // Object holder which does not allow null objects
         final NonnullObjectHolder nonnullObjectHolder = new NonnullObjectHolder();
     
         // Attempt to set null object into the method which is marked with Nonnull annotation

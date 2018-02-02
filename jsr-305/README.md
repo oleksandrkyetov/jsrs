@@ -16,7 +16,7 @@ Below you can see useful application of `@Nonnull` and `@Nullable` annotations a
 
 ##### Non-null object hints
 We have a class with two methods, `setObject` which does not allow null objects and `getObject` which does not provide a null object
-```
+```java
 public class NonnullObjectHolder implements ObjectHolder {
 
     private Object object;
@@ -32,7 +32,7 @@ public class NonnullObjectHolder implements ObjectHolder {
 }
 ```
 Marking method parameters and/or return type with `@Nonnull` annotation does not prevent developers from passing `null` objects or calling methods on objects which might be `null`, but [IntelliJ IDEA](https://www.jetbrains.com/idea/) highlights such cases and signals developers that something is potentially wrong. For example, code below compiles successfully
-```
+```javajava
 public class Main {
 
     public static void main(final String[] arguments) {

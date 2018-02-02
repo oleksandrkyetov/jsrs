@@ -56,8 +56,8 @@ The real value comes from [IntelliJ IDEA](https://www.jetbrains.com/idea/) hints
 
 Case when we try to pass `null` as an argument to the of the method which is marked `@Nonnull`
 
-![](/screenshots/jsr-305-nonnull-check-1.png
+![jsr-305-nonnull-check-1.png](/screenshots/jsr-305-nonnull-check-1.png
 
 Case when we try to perform `null` check on the object returned by method which return type is marked `@Nonnull`
 
-![](Image /screenshots/jsr-305-nonnull-check-2.png
+![jsr-305-nonnull-check-2.png](Image /screenshots/jsr-305-nonnull-check-2.png

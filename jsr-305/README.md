@@ -32,7 +32,7 @@ public class NonnullObjectHolder implements ObjectHolder {
 }
 ```
 Marking method parameters and/or return type with `@Nonnull` annotation does not prevent developers from passing `null` objects or calling methods on objects which might be `null`, but [IntelliJ IDEA](https://www.jetbrains.com/idea/) highlights such cases and signals developers that something is potentially wrong. For example, code below compiles successfully
-```javajava
+```java
 public class Main {
 
     public static void main(final String[] arguments) {

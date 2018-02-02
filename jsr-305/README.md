@@ -31,7 +31,7 @@ public class NonnullObjectHolder implements ObjectHolder {
 
 }
 ```
-Marking method parameters and/or return type with `@Nonnull` annotation does not prevent developers from passing `null` references to methods or calling methods on references which might be `null`, but [IntelliJ IDEA](https://www.jetbrains.com/idea/) highlights such cases and signals that something is potentially wrong with hints. For example, for the code below
+Marking method parameters and/or return type with `@Nonnull` annotation does not prevent developers from passing `null` references to methods or calling methods on references which might be `null`, but [IntelliJ IDEA](https://www.jetbrains.com/idea/) highlights such cases and signals that something is potentially wrong using hints. For example, for the code below
 ```java
 public class Main {
 

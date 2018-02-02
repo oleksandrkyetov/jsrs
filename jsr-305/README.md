@@ -53,11 +53,11 @@ public class Main {
 ```
 Case when we are passing `null` as an argument to a method, parameter of which is marked with `@Nonnull`
 
-![jsr-305-nonnull-check-1.png](screenshots/jsr-305-nonnull-check-1.png)
+![jsr-305-nonnull-check-2.png](screenshots/jsr-305-nonnull-check-2.png)
 
 Case when we are performing `null` check on the reference returned by a method, return type of which is marked with `@Nonnull`
 
-![jsr-305-nonnull-check-2.png](screenshots/jsr-305-nonnull-check-2.png)
+![jsr-305-nonnull-check-1.png](screenshots/jsr-305-nonnull-check-1.png)
 
 ##### Nullable reference hints
 Similar to cases above, we have a class with two methods, `setObject` which allows `null` reference and `getObject` which might return a `null` reference

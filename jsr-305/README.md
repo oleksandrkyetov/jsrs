@@ -98,7 +98,7 @@ Case when we are calling a method on the reference which was returned from the m
 
 ![jsr-305-nullable-check-1.png](screenshots/jsr-305-nullable-check-1.png)
 
-##### Conclusion
+### Conclusion
 There is much more in [JSR-305](https://jcp.org/en/jsr/detail?id=305), but unfortunately, other annotations are not supported by [IntelliJ IDEA](https://www.jetbrains.com/idea/) out of the box. Moreover, as it mentioned above, JSR status is **Dormant**, thus it is not recommended for usage at the moment
 
 From what is observed, it would have been a useful addition for tools and developers. Introduction of this JSR would have helped to prevent mistakes and errors on early stages of the software development
